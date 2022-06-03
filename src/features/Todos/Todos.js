@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { postData } from '../../services/functionServices';
-
+// import { deleteData } from '../../services/functionServices';
 
 const Todo = () => {
 
