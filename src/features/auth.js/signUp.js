@@ -1,8 +1,9 @@
-import { useState,  } from "react";
+import { useState  } from "react";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+// import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-
+  //  const navigate = useNavigate()
     let auth = getAuth();
   const [formData, setFormData] = useState({
     name: "",
@@ -28,6 +29,14 @@ const Signup = () => {
         alert(err.message)
     });
   }
+  // useEffect(() => {
+  //   if (auth) {
+      
+  //     navigate("/");
+  //   }
+    
+  // }, [ navigate, auth]);
+  
 
   return (
     <div className="signup">

@@ -18,6 +18,7 @@ const Todo = () => {
     event.preventDefault();
     console.log(input);
     postData(input)
+    alert(`to-do: ${input.todo} created`)
     
 
     
@@ -34,7 +35,7 @@ const Todo = () => {
           onChange={handleChange}
         />
       </label>
-      <input type="submit" onClick={handleSubmit} value="click" /> 
+      <input type="submit" onClick={handleSubmit} value="submit" /> 
       </form>
         </div>    
 

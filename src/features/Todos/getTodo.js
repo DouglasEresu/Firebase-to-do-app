@@ -21,9 +21,11 @@ const GetTodo = () => {
     
       const docRef = doc(db, "to-do", input.id);
       const docSnap = await getDoc(docRef);
-      
-      if (docSnap.exists()) {
-        console.log("Todo:", docSnap.data());
+      const dirRef = docSnap.data()
+
+      if (dirRef) {
+        console.log("Todo:", dirRef);
+        alert(`Your todo is ${dirRef.todo}`)
       } else {
         console.log("Todo not found!");
       }

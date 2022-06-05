@@ -8,6 +8,8 @@ import GetTodo from './features/Todos/getTodo';
 import GetTodos from './features/Todos/getTodos';
 import Signup from './features/auth.js/signUp';
 import Login from './features/auth.js/Login';
+import DeleteTodo from './features/Todos/deleteTodo';
+import Upload from './Storage';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/todo" element={<Todo />} />
         <Route path="/getTodos" element={<GetTodos />} />
       <Route path="/getTodo" element={<GetTodo />}></Route>
+      <Route path="/deleteTodo" element={<DeleteTodo />} />
+      <Route path="/img" element={<Upload />} />
       </Routes>
     </BrowserRouter>
       </div>

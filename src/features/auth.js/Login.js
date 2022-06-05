@@ -1,8 +1,9 @@
-import { useState,  } from "react";
+import { useState } from "react";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+// import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-
+  // const navigate = useNavigate();
     let auth = getAuth();
     let googleProvider = new GoogleAuthProvider()
   const [formData, setFormData] = useState({
@@ -27,7 +28,15 @@ const Login = () => {
     .catch((err) => {
         alert(err.message)
     });
-  }
+}
+  // useEffect(() => {
+  //   if (auth) {
+    
+  //     navigate("/");
+  //   }
+    
+  // }, [ navigate, auth]);
+  
 
   return (
     <div className="login">

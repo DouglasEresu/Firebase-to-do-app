@@ -37,25 +37,7 @@ import { db } from "../config/firebaseconfig";
           }
     }
 
-    
-
-
-    // get particular document
-//  export  async function getData(data){
-    
-//   const docRef = doc(db, "to-do", "id");
-//   const docSnap = await getDoc(docRef);
   
-//   if (docSnap.exists()) {
-//     console.log("Document data:", docSnap.data());
-//   } else {
-//     // doc.data() will be undefined in this case
-//     console.log("No such document!");
-//   }
-
-//  }
-    
-
 
 
 //  Deleting a document by ID
